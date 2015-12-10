@@ -1,5 +1,7 @@
 # Prototypical Plus
 
+[![Build Status](https://travis-ci.org/adamphillips/prototypical_plus.svg)](https://travis-ci.org/adamphillips/prototypical_plus)
+
 Prototypical Plus builds on
 [Prototypical](https://github.com/adamphillips/prototypical) by adding some
 predefined components to use when prototyping.
