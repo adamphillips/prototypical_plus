@@ -5,6 +5,7 @@ require File.expand_path("../../test/dummy/config/environment.rb",  __FILE__)
 require "rails/test_help"
 require 'minitest-spec-rails'
 require 'mocha/mini_test'
+require 'pry-byebug'
 
 # Filter out Minitest backtrace while allowing backtrace from other libraries
 # to be shown.
