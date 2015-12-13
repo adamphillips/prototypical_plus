@@ -6,6 +6,7 @@ require "rails/test_help"
 require 'minitest-spec-rails'
 require 'mocha/mini_test'
 require 'pry-byebug'
+require 'capybara/rails'
 
 # Filter out Minitest backtrace while allowing backtrace from other libraries
 # to be shown.

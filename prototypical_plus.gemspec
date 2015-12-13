@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "minitest-spec-rails", "~> 5.3"
   s.add_development_dependency "mocha", "~> 1.1"
   s.add_development_dependency "pry-byebug", "~> 3.3"
+  s.add_development_dependency "capybara"
 end
