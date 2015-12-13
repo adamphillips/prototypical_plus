@@ -1,7 +1,8 @@
 module Prototypical
   module ComponentsHelper
-    def proto type, options={}
-      render component(type, options).render_settings
+    def proto type, options={}, &block
+      settings = component(type, options).render_settings
+      render(settings, &block)
     end
 
   private

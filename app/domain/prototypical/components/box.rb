@@ -7,7 +7,7 @@ module Prototypical; module Components
 
     def render_settings
       {
-        partial: template_path,
+        layout: template_path,
         locals: {
           css_class: css_class,
           style: style

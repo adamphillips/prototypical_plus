@@ -8,7 +8,7 @@ module Prototypical
 
     describe '#proto' do
       it 'should render the component' do
-        markup = proto(:box, css_class: 'three-col', style: {height: '50px'})
+        markup = proto(:box, css_class: 'three-col', style: {height: '50px'}) {}
         assert_select_from markup, 'div.box.three-col'
       end
 

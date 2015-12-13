@@ -1,9 +1,11 @@
 require 'test_helper'
 
 class ComponentsTest < ActionDispatch::IntegrationTest
-  it 'should be possible to view an image' do
-    get '/'
-    assert_response :success
+  include Capybara::DSL
+
+  it 'should be possible to view a prototype' do
+    visit '/'
+    assert page.has_selector?('.box img')
   end
 end
 
