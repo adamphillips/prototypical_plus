@@ -1,6 +1,7 @@
 module Prototypical; module Components
   class Box
     def initialize(options={})
+      @label = options.fetch(:label) { '' }
       @css_class = options.fetch(:css_class) { '' }
       @style = Style.new(options.fetch(:style) { {} })
     end
@@ -9,6 +10,7 @@ module Prototypical; module Components
       {
         layout: template_path,
         locals: {
+          label: label,
           css_class: css_class,
           style: style
         }
@@ -16,7 +18,7 @@ module Prototypical; module Components
     end
 
   private
-    attr_reader :css_class, :style
+    attr_reader :label, :css_class, :style
 
     def template_path
       "prototypical/components/box"
