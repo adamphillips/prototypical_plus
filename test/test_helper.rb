@@ -8,6 +8,10 @@ require 'mocha/mini_test'
 require 'pry-byebug'
 require 'capybara/rails'
 
+require 'prototypical'
+
+Prototypical.enabled = true
+
 # Filter out Minitest backtrace while allowing backtrace from other libraries
 # to be shown.
 Minitest.backtrace_filter = Minitest::BacktraceFilter.new
