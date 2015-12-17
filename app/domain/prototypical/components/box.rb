@@ -26,7 +26,8 @@ module Prototypical; module Components
 
     class Style
       DEFAULTS = {
-        padding: '12px'
+        padding: '12px',
+        'background-color' => '#cccccc'
       }
 
       def initialize(options={})
